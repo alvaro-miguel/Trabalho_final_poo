@@ -11,10 +11,10 @@ export class Acao {
     ) {}
 
 
-    public toJSON() { //evita erro de ciclo ao salvar o JSON (Personagem -> Acao -> Personagem)
+    public toJSON() {
         return {
             id: this.id,
-            origem: this.origem.nome, //salva apenas o nome/ID
+            origem: this.origem.nome,
             alvo: this.alvo.nome,
             descricao: this.descricao,
             valorDano: this.valorDano,

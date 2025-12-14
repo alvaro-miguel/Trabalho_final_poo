@@ -1,65 +1,64 @@
 import fs from 'fs';
-import { Personagem, Guerreiro, Mago, Arqueiro } from './personagem.js';
+import { Personagem, Guerreiro, Mago, Arqueiro, Vampiro } from './personagem.js';
 
-const CAMINHO_ARQUIVO = './personagens.json';
+const CAMINHO_ARQUIVO = './batalha_dados.json';
 
 export class Persistencia {
     
     public static salvar(personagens: Personagem[]): void {
         try {
-            // O método toJSON nas classes Acao ajuda, mas aqui salvamos Personagens.
-            // O stringify vai pegar os atributos privados se acessados via getter ou se o JS permitir.
-            // A estrutura salva dependerá de como o JSON.stringify serializa os objetos.
-            const dados = JSON.stringify(personagens, null, 2);
+            const arquivo = {
+                data: new Date(),
+                totalPersonagens: personagens.length,
+                personagens: personagens
+            };
+            const dados = JSON.stringify(arquivo, null, 2);
             fs.writeFileSync(CAMINHO_ARQUIVO, dados, 'utf-8');
-            console.log("Dados salvos com sucesso!");
+            console.log("💾 Jogo salvo em 'batalha_dados.json'");
         } catch (error) {
-            console.error("Erro ao salvar dados:", error);
+            console.error("Erro ao salvar:", error);
         }
     }
 
     public static carregar(): Personagem[] {
-        if (!fs.existsSync(CAMINHO_ARQUIVO)) {
-            return [];
-        }
+        if (!fs.existsSync(CAMINHO_ARQUIVO)) return [];
 
         try {
             const dados = fs.readFileSync(CAMINHO_ARQUIVO, 'utf-8');
-            const objetos = JSON.parse(dados);
+            const json = JSON.parse(dados);
+            
+            const listaObjetos = Array.isArray(json) ? json : json.personagens;
+            
             const personagens: Personagem[] = [];
 
-            for (const obj of objetos) {
+            for (const obj of listaObjetos) {
                 let p: Personagem;
-                
-                // NOTA: Ao carregar do JSON, atributos privados (_id) podem vir sem o underscore 
-                // ou com ele, dependendo de como foi salvo. Ajuste conforme o arquivo gerado.
-                // Assumindo que JSON.stringify salvou "_id", "_nome", etc.
-                
-                switch (obj.tipoClasse) {
+                const tipo = obj.tipoClasse || obj._tipoClasse;
+                const id = obj._id || obj.id;
+                const nome = obj._nome || obj.nome;
+                const vida = obj._vida || obj.vida; 
+                const ataque = obj._ataque || obj.ataque;
+
+                switch (tipo) {
                     case "Guerreiro":
-                        // Guerreiro precisa de defesa (obj._defesa)
-                        p = new Guerreiro(obj._id, obj._nome, obj._vida, obj._ataque, obj._defesa);
+                        p = new Guerreiro(id, nome, vida, ataque, obj._defesa || obj.defesa);
                         break;
                     case "Mago":
-                        // Mago NÃO tem defesa no construtor
-                        p = new Mago(obj._id, obj._nome, obj._vida, obj._ataque);
+                        p = new Mago(id, nome, vida, ataque);
                         break;
                     case "Arqueiro":
-                        // Arqueiro tem ataqueMultiplo (obj._ataqueMultiplo)
-                        p = new Arqueiro(obj._id, obj._nome, obj._vida, obj._ataque, obj._ataqueMultiplo);
+                        p = new Arqueiro(id, nome, vida, ataque, obj._ataqueMultiplo || obj.ataqueMultiplo);
                         break;
-                    default:
-                        continue;
+                    case "Vampiro":
+                        p = new Vampiro(id, nome, vida, ataque);
+                        break;
+                    default: continue;
                 }
-                
-                // Se precisar restaurar o histórico, teria que ser feito aqui,
-                // mas para simplificar, carregamos sem histórico ou implementamos lógica extra.
                 personagens.push(p);
             }
             return personagens;
-
         } catch (error) {
-            console.error("Erro ao carregar dados:", error);
+            console.error("Erro ao carregar:", error);
             return [];
         }
     }

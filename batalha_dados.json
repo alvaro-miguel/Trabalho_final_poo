@@ -1,0 +1,286 @@
+{
+  "data": "2025-12-14T23:51:54.627Z",
+  "totalPersonagens": 7,
+  "personagens": [
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 25,
+      "_id": 3108,
+      "_nome": "Thorgal",
+      "tipoClasse": "Guerreiro",
+      "_vida": 0,
+      "_vidaMaxima": 10,
+      "_ataque": 25,
+      "_defesa": 15
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 4643,
+      "_nome": "Lyra",
+      "tipoClasse": "Mago",
+      "_ataque": 30
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 9788,
+      "_nome": "Elandor",
+      "tipoClasse": "Arqueiro",
+      "_ataque": 15,
+      "_ataqueMultiplo": 3
+    },
+    {
+      "_historico": [
+        {
+          "id": 1,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:47.828Z"
+        },
+        {
+          "id": 2,
+          "origem": "Merlin",
+          "alvo": "Dracula",
+          "descricao": "Magia",
+          "valorDano": 25,
+          "dataHora": "2025-12-14T23:28:47.828Z"
+        },
+        {
+          "id": 4,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:49.433Z"
+        },
+        {
+          "id": 5,
+          "origem": "Merlin",
+          "alvo": "Thorgal",
+          "descricao": "Magia",
+          "valorDano": 25,
+          "dataHora": "2025-12-14T23:28:49.433Z"
+        },
+        {
+          "id": 7,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:51.038Z"
+        },
+        {
+          "id": 8,
+          "origem": "Merlin",
+          "alvo": "Dracula",
+          "descricao": "Magia",
+          "valorDano": 25,
+          "dataHora": "2025-12-14T23:28:51.038Z"
+        },
+        {
+          "id": 9,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:51.839Z"
+        },
+        {
+          "id": 10,
+          "origem": "Merlin",
+          "alvo": "Dracula",
+          "descricao": "Magia",
+          "valorDano": 25,
+          "dataHora": "2025-12-14T23:28:51.839Z"
+        },
+        {
+          "id": 13,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:54.242Z"
+        },
+        {
+          "id": 14,
+          "origem": "Merlin",
+          "alvo": "Legolas",
+          "descricao": "Magia (Crítico em Arqueiro)",
+          "valorDano": 50,
+          "dataHora": "2025-12-14T23:28:54.242Z"
+        },
+        {
+          "id": 15,
+          "origem": "Merlin",
+          "alvo": "Merlin",
+          "descricao": "Custo de Mana (Vida)",
+          "valorDano": 5,
+          "dataHora": "2025-12-14T23:28:55.044Z"
+        },
+        {
+          "id": 16,
+          "origem": "Merlin",
+          "alvo": "Orc",
+          "descricao": "Magia",
+          "valorDano": 25,
+          "dataHora": "2025-12-14T23:28:55.044Z"
+        }
+      ],
+      "_danoCausado": 175,
+      "_danoRecebido": 80,
+      "_id": 1840,
+      "_nome": "Merlin",
+      "tipoClasse": "Mago",
+      "_vida": 0,
+      "_vidaMaxima": 80,
+      "_ataque": 25
+    },
+    {
+      "_historico": [
+        {
+          "id": 12,
+          "origem": "Legolas",
+          "alvo": "Dracula",
+          "descricao": "Disparo (Crítico x2)",
+          "valorDano": 36,
+          "dataHora": "2025-12-14T23:28:53.441Z"
+        },
+        {
+          "id": 17,
+          "origem": "Legolas",
+          "alvo": "Merlin",
+          "descricao": "Disparo",
+          "valorDano": 18,
+          "dataHora": "2025-12-14T23:28:55.846Z"
+        },
+        {
+          "id": 18,
+          "origem": "Legolas",
+          "alvo": "Merlin",
+          "descricao": "Disparo",
+          "valorDano": 18,
+          "dataHora": "2025-12-14T23:28:56.648Z"
+        },
+        {
+          "id": 21,
+          "origem": "Legolas",
+          "alvo": "Orc",
+          "descricao": "Disparo (Crítico x2)",
+          "valorDano": 36,
+          "dataHora": "2025-12-14T23:28:59.051Z"
+        },
+        {
+          "id": 22,
+          "origem": "Legolas",
+          "alvo": "Orc",
+          "descricao": "Disparo",
+          "valorDano": 18,
+          "dataHora": "2025-12-14T23:28:59.853Z"
+        },
+        {
+          "id": 23,
+          "origem": "Legolas",
+          "alvo": "Orc",
+          "descricao": "Disparo (Crítico x2)",
+          "valorDano": 36,
+          "dataHora": "2025-12-14T23:29:00.654Z"
+        },
+        {
+          "id": 24,
+          "origem": "Legolas",
+          "alvo": "Orc",
+          "descricao": "Disparo",
+          "valorDano": 18,
+          "dataHora": "2025-12-14T23:29:01.455Z"
+        },
+        {
+          "id": 25,
+          "origem": "Legolas",
+          "alvo": "Orc",
+          "descricao": "Disparo",
+          "valorDano": 18,
+          "dataHora": "2025-12-14T23:29:02.257Z"
+        }
+      ],
+      "_danoCausado": 198,
+      "_danoRecebido": 78,
+      "_id": 2145,
+      "_nome": "Legolas",
+      "tipoClasse": "Arqueiro",
+      "_vida": 12,
+      "_vidaMaxima": 90,
+      "_ataque": 18,
+      "_ataqueMultiplo": 2
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 125,
+      "_id": 9230,
+      "_nome": "Dracula",
+      "tipoClasse": "Vampiro",
+      "_vida": 0,
+      "_vidaMaxima": 110,
+      "_ataque": 12
+    },
+    {
+      "_historico": [
+        {
+          "id": 3,
+          "origem": "Orc",
+          "alvo": "Thorgal",
+          "descricao": "Ataque Físico",
+          "valorDano": 14,
+          "dataHora": "2025-12-14T23:28:48.631Z"
+        },
+        {
+          "id": 6,
+          "origem": "Orc",
+          "alvo": "Dracula",
+          "descricao": "Ataque Físico",
+          "valorDano": 14,
+          "dataHora": "2025-12-14T23:28:50.235Z"
+        },
+        {
+          "id": 11,
+          "origem": "Orc",
+          "alvo": "Merlin",
+          "descricao": "Ataque Físico",
+          "valorDano": 14,
+          "dataHora": "2025-12-14T23:28:52.640Z"
+        },
+        {
+          "id": 19,
+          "origem": "Orc",
+          "alvo": "Legolas",
+          "descricao": "Ataque Físico",
+          "valorDano": 14,
+          "dataHora": "2025-12-14T23:28:57.449Z"
+        },
+        {
+          "id": 20,
+          "origem": "Orc",
+          "alvo": "Legolas",
+          "descricao": "Ataque Físico",
+          "valorDano": 14,
+          "dataHora": "2025-12-14T23:28:58.250Z"
+        }
+      ],
+      "_danoCausado": 70,
+      "_danoRecebido": 126,
+      "_id": 6502,
+      "_nome": "Orc",
+      "tipoClasse": "Guerreiro",
+      "_vida": 0,
+      "_vidaMaxima": 120,
+      "_ataque": 14,
+      "_defesa": 5
+    }
+  ]
+}
