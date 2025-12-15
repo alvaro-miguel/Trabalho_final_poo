@@ -1,0 +1,67 @@
+{
+  "data": "2025-12-15T20:25:03.291Z",
+  "totalPersonagens": 6,
+  "personagens": [
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 5014,
+      "_nome": "Merlin",
+      "tipoClasse": "Mago",
+      "_ataque": 25
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 2842,
+      "_nome": "Legolas",
+      "tipoClasse": "Arqueiro",
+      "_ataque": 18,
+      "_ataqueMultiplo": 2
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 8758,
+      "_nome": "Dracula",
+      "tipoClasse": "Vampiro",
+      "_ataque": 12
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 9894,
+      "_nome": "Orc",
+      "tipoClasse": "Guerreiro",
+      "_ataque": 14,
+      "_defesa": 5
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 2504,
+      "_nome": "corredor",
+      "tipoClasse": "Guerreiro",
+      "_vida": 65,
+      "_vidaMaxima": 65,
+      "_ataque": 25,
+      "_defesa": 15
+    },
+    {
+      "_historico": [],
+      "_danoCausado": 0,
+      "_danoRecebido": 0,
+      "_id": 4054,
+      "_nome": "mago de gelo",
+      "tipoClasse": "Mago",
+      "_vida": 95,
+      "_vidaMaxima": 95,
+      "_ataque": 35
+    }
+  ]
+}
